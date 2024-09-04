@@ -1,85 +1,99 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Carousel from 'react-bootstrap/Carousel';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../assets/images.jpeg';
-import Image from '../../assets/4.jpeg';
-import Title from '../../assets/3.jpeg';
-import Jpeg from '../../assets/2.jpeg';
-
-
+import Carousel from 'react-bootstrap/Carousel';
+import Image from '../../assets/3.jpeg';
+import Text from '../../assets/2.jpeg';
+import Fix from '../../assets/1.jpeg';
 
 
 export const header = () => {
   return (
-
-    <section>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container fluid>
-          <Navbar.Brand href="#home">
-            <img
-              src={Logo}
-              width="100"
-              height="100"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-
-            />{''}
-            CONLINE
-          </Navbar.Brand>
+    <><Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <img
+          src={Logo}
+          width="150"
+          height="100"
+          className="d-inline-block align-top"
+          alt="React Bootstrap logo"
+        />{'  '}
+        <b>NAJMAT AL SAADAH</b>
+        <Navbar.Brand href="#home">
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse className="justify-content-end">
           <Nav
-            className=" justify-content-end"
-            style={{ maxHeight: '50px' }}
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
             navbarScroll
           >
             <Nav.Link href="#action1">HOME</Nav.Link>
-            <Nav.Link href="#action2">ABOUT</Nav.Link>
-            <Nav.Link href="#product">PRODUCT</Nav.Link>
-            <Nav.Link href="#conatct">CONTACT</Nav.Link>
+            <Nav.Link href="#action1">ABOUT</Nav.Link>
+            <Nav.Link href="#action1">PRODUCT</Nav.Link>
+            <Nav.Link href="#action1">CONTACT</Nav.Link>
+            <NavDropdown title="Link" id="navbarScrollingDropdown">
+
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#" disabled>
+              Link
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2"
+              className="me-3"
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
           </Form>
-        </Container>
-      </Navbar>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
 
       <Carousel>
         <Carousel.Item>
-          <img src={Image} height={400} width={1400} />
+          <img src={Image} height={600} width={1400}/>
           <Carousel.Caption>
             <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={Title} height={400} width={1400} />
+          <img src={Text} height={600} width={1400}/>
           <Carousel.Caption>
             <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={Jpeg} height={400} width={1400}/>
+        <img src={Fix} height={600} width={1400} />
           <Carousel.Caption>
             <h3>Third slide label</h3>
-
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
-    </section>
+
+    </>
   )
 }
 export default header
-
-
-
 
