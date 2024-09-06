@@ -1,60 +1,39 @@
-import React from 'react'
-import Logo from '../../assets/1.jpeg';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
+// src/components/Footer.js
+import React from 'react';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 
-
-export const footer = () => {
+const Footer = () => {
   return (
-   <><Footer container>
-   <div className="w-full">
-     <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-       <div>
-         <Footer.Brand
-           href="https://flowbite.com"
-           src={Logo}
-           alt="Flowbite Logo"
-           name="Flowbite"
-         />
-       </div>
-       <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-         <div>
-           <Footer.Title title="about" />
-           <Footer.LinkGroup col>
-             <Footer.Link href="#">Flowbite</Footer.Link>
-             <Footer.Link href="#">Tailwind CSS</Footer.Link>
-           </Footer.LinkGroup>
-         </div>
-         <div>
-           <Footer.Title title="Follow us" />
-           <Footer.LinkGroup col>
-             <Footer.Link href="#">Github</Footer.Link>
-             <Footer.Link href="#">Discord</Footer.Link>
-           </Footer.LinkGroup>
-         </div>
-         <div>
-           <Footer.Title title="Legal" />
-           <Footer.LinkGroup col>
-             <Footer.Link href="#">Privacy Policy</Footer.Link>
-             <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
-           </Footer.LinkGroup>
-         </div>
-       </div>
-     </div>
-     <Footer.Divider />
-     <div className="w-full sm:flex sm:items-center sm:justify-between">
-       <Footer.Copyright href="#" by="Flowbite™" year={2022} />
-       <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-         <Footer.Icon href="#" icon={BsFacebook} />
-         <Footer.Icon href="#" icon={BsInstagram} />
-         <Footer.Icon href="#" icon={BsTwitter} />
-         <Footer.Icon href="#" icon={BsGithub} />
-         <Footer.Icon href="#" icon={BsDribbble} />
-       </div>
-     </div>
-   </div>
- </Footer>
-);
-   </>
-  )
-}
-export default footer
+    <footer className="bg-dark text-light py-4">
+      <Container>
+        <Row>
+          <Col md={4} className="mb-3 mb-md-0">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet arcu eu nisi venenatis.</p>
+          </Col>
+          <Col md={4} className="mb-3 mb-md-0">
+            <h5>Quick Links</h5>
+            <Nav className="flex-column">
+              <Nav.Link href='#home'>HOME</Nav.Link>
+              <Nav.Link href="#about">ABOUT</Nav.Link>
+              <Nav.Link href="#services">PRODUCT</Nav.Link>
+              <Nav.Link href="#contact">CONTACT</Nav.Link>
+            </Nav>
+          </Col>
+          <Col md={4}>
+            <h5>Contact</h5>
+            <p>Email: example@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </Col>
+        </Row>
+        <Row className="mt-4">
+          <Col className="text-center">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;
