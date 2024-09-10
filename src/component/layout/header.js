@@ -84,7 +84,7 @@ export const header = () => {
 
       <Carousel>
         <Carousel.Item>
-          <img src={Image} height={600} width={1300} />
+          <img src={Image} height={600} width={1400} />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -98,7 +98,7 @@ export const header = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={Fix} height={600} width={1400} />
+          <img src={Fix} height={600} width={1350} />
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>
