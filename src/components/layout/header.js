@@ -14,24 +14,8 @@ import { Link } from 'react-router-dom';
 
 export const header = () => {
   return (
-    <>
-
- <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          {/* Add more links as needed */}
-        </ul>
-      </nav>
-    </header> 
-
-
-       <Navbar expand="lg" className="bg-body-tertiary">
+    <> 
+    <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <img
             src={Logo}
@@ -50,10 +34,23 @@ export const header = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">HOME</Nav.Link>
+              <header>
+              <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          {/* Add more links as needed */}
+        </ul>
+      </nav>
+      </header>
+              {/* <Nav.Link href="#action1">HOME</Nav.Link>
               <Nav.Link href="#action1">ABOUT</Nav.Link>
               <Nav.Link href="#action1">PRODUCT</Nav.Link>
-              <Nav.Link href="#action1">CONTACT</Nav.Link>
+              <Nav.Link href="#action1">CONTACT</Nav.Link> */}
               <NavDropdown title="Link" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="#action4">

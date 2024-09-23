@@ -30,10 +30,9 @@ import Footer from '../layout/footer';
  const home = () => {
   return (
     <>
-     <h1>Home Page</h1>;
+     <h1>Home Page</h1>
       <Header />
       
-       <Header />
       <Carousel>
         <Carousel.Item>
           <img src={Image} height={600} width={1400} />
