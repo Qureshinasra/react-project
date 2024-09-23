@@ -30,7 +30,7 @@ import Footer from '../layout/footer';
  const home = () => {
   return (
     <>
-     <h1>Home Page</h1>
+     <h6>Home Page</h6>
       <Header />
       
       <Carousel>
