@@ -34,23 +34,11 @@ export const header = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <header>
-              <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          {/* Add more links as needed */}
-        </ul>
-      </nav>
-      </header>
-              {/* <Nav.Link href="#action1">HOME</Nav.Link>
-              <Nav.Link href="#action1">ABOUT</Nav.Link>
-              <Nav.Link href="#action1">PRODUCT</Nav.Link>
-              <Nav.Link href="#action1">CONTACT</Nav.Link> */}
+              
+              <Nav.Link as={Link} to="/">HOME</Nav.Link>
+              <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+              <Nav.Link as={Link} to="/product">PRODUCT</Nav.Link>
+              <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
               <NavDropdown title="Link" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="#action4">

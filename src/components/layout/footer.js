@@ -1,6 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -14,9 +15,9 @@ const Footer = () => {
           <Col md={4} className="mb-3 mb-md-0">
             <h5>Quick Links</h5>
             <Nav className="flex-column">
-              <Nav.Link href='#home'>HOME</Nav.Link>
-              <Nav.Link href="#about">ABOUT</Nav.Link>
-              <Nav.Link href="#services">PRODUCT</Nav.Link>
+            <Nav.Link as={Link} to="/">HOME</Nav.Link>
+            <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+            <Nav.Link as={Link} to="/product">PRODUCT</Nav.Link>
               <Nav.Link href="#contact">CONTACT</Nav.Link>
             </Nav>
           </Col>
