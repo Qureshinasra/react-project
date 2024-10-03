@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import Logo from '../../assets/images.jpeg'
 
 const Footer = () => {
   return (
@@ -9,8 +10,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4} className="mb-3 mb-md-0">
-            <h5>About Us</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet arcu eu nisi venenatis.</p>
+           <img src={Logo} height={150} width={200}></img>
           </Col>
           <Col md={4} className="mb-3 mb-md-0">
             <h5>Quick Links</h5>

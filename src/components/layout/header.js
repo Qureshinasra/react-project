@@ -38,8 +38,8 @@ export const header = () => {
               <Nav.Link as={Link} to="/">HOME</Nav.Link>
               <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
               <Nav.Link as={Link} to="/product">PRODUCT</Nav.Link>
-              <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
+              <Nav.Link as={Link} to="/conatct">CONTACT</Nav.Link>
+              {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
 
                 <NavDropdown.Item href="#action4">
                   Another action
@@ -51,7 +51,7 @@ export const header = () => {
               </NavDropdown>
               <Nav.Link href="#" disabled>
                 Link
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
             <Form className="d-flex">
               <Form.Control
