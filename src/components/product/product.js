@@ -59,9 +59,9 @@ const product = () => {
             </Card.Body>
           </Card></Col>
         </Row>
-      
-      <Row>
-        <Col><Card style={{ width: '18rem' }}>
+
+        <Row>
+          <Col><Card style={{ width: '18rem' }}>
             <Card.Body>
               <img src={Z} height={300} width={250}></img>
               <Card.Title>DRESS 4</Card.Title>
@@ -69,7 +69,7 @@ const product = () => {
               <Button variant="primary">buy now</Button>
             </Card.Body>
           </Card></Col>
-          
+
           <Col><Card style={{ width: '18rem' }}>
             <Card.Body>
               <img src={N} height={300} width={250}></img>
@@ -88,79 +88,79 @@ const product = () => {
               <Button variant="primary">buy now</Button>
             </Card.Body>
           </Card></Col>
-          </Row>
+        </Row>
 
-          <Row>
-            <Col>
+        <Row>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={H} height={300} width={250}></img>
-              <Card.Title>DRESS 7</Card.Title>
-              <Card.Text>850 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
+              <Card.Body>
+                <img src={H} height={300} width={250}></img>
+                <Card.Title>DRESS 7</Card.Title>
+                <Card.Text>850 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
 
-            <Col>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={I} height={300} width={250}></img>
-              <Card.Title>DRESS 8</Card.Title>
-              <Card.Text>1200 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
+              <Card.Body>
+                <img src={I} height={300} width={250}></img>
+                <Card.Title>DRESS 8</Card.Title>
+                <Card.Text>1200 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
 
-            <Col>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={M} height={300} width={250}></img>
-              <Card.Title>DRESS 9</Card.Title>
-              <Card.Text>1250 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
-          </Row>
+              <Card.Body>
+                <img src={M} height={300} width={250}></img>
+                <Card.Title>DRESS 9</Card.Title>
+                <Card.Text>1250 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
 
-          <Row>
-            <Col>
+        <Row>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={R} height={300} width={250}></img>
-              <Card.Title>DRESS 10</Card.Title>
-              <Card.Text>1400 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
+              <Card.Body>
+                <img src={R} height={300} width={250}></img>
+                <Card.Title>DRESS 10</Card.Title>
+                <Card.Text>1400 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
 
-            <Col>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={s} height={300} width={250}></img>
-              <Card.Title>DRESS 11</Card.Title>
-              <Card.Text>1500 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
+              <Card.Body>
+                <img src={s} height={300} width={250}></img>
+                <Card.Title>DRESS 11</Card.Title>
+                <Card.Text>1500 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
 
-            <Col>
+          <Col>
             <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <img src={c} height={300} width={250}></img>
-              <Card.Title>DRESS 12</Card.Title>
-              <Card.Text>1550 MRP</Card.Text>
-              <Button variant="primary">buy now</Button>
-            </Card.Body>
-          </Card>
-            </Col>
-          </Row>
-          </Container>
-          <Footer />
+              <Card.Body>
+                <img src={c} height={300} width={250}></img>
+                <Card.Title>DRESS 12</Card.Title>
+                <Card.Text>1550 MRP</Card.Text>
+                <Button variant="primary">buy now</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
     </>
 
   )
