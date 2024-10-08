@@ -25,6 +25,21 @@ const Footer = () => {
             <h5>Contact</h5>
             <p>Email: example@example.com</p>
             <p>Phone: (123) 456-7890</p>
+            {/* <h5>Follow Us</h5>
+            <div className="d-flex">
+              <a href="https://facebook.com" className="text-light me-3" target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={24} />
+              </a>
+              <a href="https://twitter.com" className="text-light me-3" target="_blank" rel="noopener noreferrer">
+                <FaTwitter size={24} />
+              </a>
+              <a href="https://instagram.com" className="text-light me-3" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={24} />
+              </a>
+              <a href="https://linkedin.com" className="text-light" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={24} />
+              </a>
+            </div> */}
           </Col>
         </Row>
         <Row className="mt-4">
