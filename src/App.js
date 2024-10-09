@@ -5,6 +5,7 @@ import Home from './components/home/home'; // Make sure this matches exactly
 import About from './components/about/about'; // Make sure this matches exactly
 import Product from './components/product/product'; // Make sure this matches exactly
 import Contact from './components/contact/contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
